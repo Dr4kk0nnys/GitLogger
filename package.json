@@ -1,0 +1,9 @@
+{
+  "name": "git-logger",
+  "version": "1.0.0",
+  "description": "This is a git logger for terminal ( similar to the git push automation made for vscode )",
+  "main": "main.ts",
+  "author": "Dr4kk0nnys <renatoversianidrakk@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
