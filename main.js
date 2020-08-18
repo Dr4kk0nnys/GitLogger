@@ -1,4 +1,7 @@
-// executing os commands
-import { execSync } from 'child_process';
-// robotjs.typeString('Hello World');
-console.log(execSync('git status', { encoding: 'utf-8' }));
+import robotjs from 'robotjs';
+setTimeout(() => {
+    robotjs.typeString('Dr4kk0nnys');
+    robotjs.keyTap('enter');
+    robotjs.typeString('Dr4kk0nnys');
+    robotjs.keyTap('enter');
+}, 4000);
