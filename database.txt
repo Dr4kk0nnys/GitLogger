@@ -1,0 +1,2 @@
+your_github_email/username
+your_github_password ( use code64 as encryption )
