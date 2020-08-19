@@ -1,13 +1,9 @@
 import robotjs from 'robotjs';
-import fs from 'fs';
-fs.readFile('~/.git_logger/database.txt', 'UTF-8', (err, data) => {
-    if (err)
-        throw err;
-    const [email, password] = data.split('\n');
-    setTimeout(() => {
-        robotjs.typeString(email);
-        robotjs.keyTap('enter');
-        robotjs.typeString(Buffer.from(password, 'base64').toString('ascii'));
-        robotjs.keyTap('enter');
-    }, 4000);
-});
+const emailOrUsername = 'Dr4kk0nnys';
+const encryptedPassword = 'd2h5X3lvdV9sb29raW5nX2ludG9fdGhpc18/';
+setTimeout(() => {
+    robotjs.typeString(emailOrUsername);
+    robotjs.keyTap('enter');
+    robotjs.typeString(Buffer.from(encryptedPassword, 'base64').toString('ascii'));
+    robotjs.keyTap('enter');
+}, 4000);
