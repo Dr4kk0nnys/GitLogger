@@ -1,10 +1,9 @@
 import robotjs from 'robotjs';
 import fs from 'fs';
-fs.readFile('database.txt', 'UTF-8', (err, data) => {
+fs.readFile('~/.git_logger/database.txt', 'UTF-8', (err, data) => {
     if (err)
         throw err;
-    const sanitizedData = data.split('\n');
-    const [email, password] = sanitizedData;
+    const [email, password] = data.split('\n');
     setTimeout(() => {
         robotjs.typeString(email);
         robotjs.keyTap('enter');
@@ -12,6 +11,3 @@ fs.readFile('database.txt', 'UTF-8', (err, data) => {
         robotjs.keyTap('enter');
     }, 4000);
 });
-/*
-
-*/ 
